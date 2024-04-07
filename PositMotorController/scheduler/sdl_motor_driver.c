@@ -29,14 +29,14 @@ extern void SdlMotorDriverInit(void)
 
 extern void SdlMotorDriverRun(void)
 {
-	if(flag_b == false)
+	if(flag_b == true)
 	{
 		MotorDriverStartMotor(DRV_LOW_RIGHT_MOTOR, DRV_LOW_DIR_FW, 10u);
 		MotorDriverStartMotor(DRV_LOW_RIGHT_MOTOR, DRV_LOW_DIR_REV, 10u);
 		MotorDriverStartMotor(DRV_LOW_LEFT_MOTOR, DRV_LOW_DIR_FW, 10u);
 		MotorDriverStartMotor(DRV_LOW_LEFT_MOTOR, DRV_LOW_DIR_REV, 10u);
 
-		flag_b = true;
+		flag_b = false;
 	}
 
 	while(speed_gu16 != 80u)

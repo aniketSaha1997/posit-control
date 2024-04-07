@@ -127,7 +127,7 @@ extern void DrvLowMotorMoveReverse(DrvLowMotorSelectorEn selector_en, uint16_t s
 }
 
 
-extern void DrvLowStopStopMotor(DrvLowMotorSelectorEn selector_en)
+extern void DrvLowStopMotor(DrvLowMotorSelectorEn selector_en)
 {
 	if(selector_en == DRV_LOW_RIGHT_MOTOR)
 	{
